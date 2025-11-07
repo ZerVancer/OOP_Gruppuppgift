@@ -2,6 +2,7 @@ import tasks.task1.User;
 import tasks.task1.UserDTO;
 import tasks.task1.UserRole;
 import tasks.task1.UserService;
+import tasks.task2.CustomArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,24 +10,42 @@ import java.util.List;
 public class Main {
   public static void main(String[] args) {
 
-    UserService userService = new UserService();
-    List<User> users = new ArrayList<>();
+//    UserService userService = new UserService();
+//    List<User> users = new ArrayList<>();
+//
+//    for (int i = 0; i < 10; i++) {
+//      User user = new User("i", "e", true, UserRole.CLIENT);
+//      users.add(user);
+//    }
+//
+//    User admin = new User("admin", "a", true, UserRole.ADMIN);
+//    User admin2 = new User("admin", "a", false, UserRole.ADMIN);
+//    User admin3 = new User("admin", "a", true, UserRole.ADMIN);
+//
+//    users.add(admin);
+//    users.add(admin2);
+//    users.add(admin3);
+//
+//    List<UserDTO> result = userService.getActiveUsers(users);
+//
+//    System.out.println(result.size());
 
-    for (int i = 0; i < 10; i++) {
-      User user = new User("i", "e", true, UserRole.CLIENT);
-      users.add(user);
-    }
+    CustomArrayList<Integer> cal = new CustomArrayList<>();
 
-    User admin = new User("admin", "a", true, UserRole.ADMIN);
-    User admin2 = new User("admin", "a", false, UserRole.ADMIN);
-    User admin3 = new User("admin", "a", true, UserRole.ADMIN);
+    cal.add(1);
+    cal.add(2);
+    cal.add(3);
+    cal.add(4);
+    cal.add(5);
+    cal.add(6);
 
-    users.add(admin);
-    users.add(admin2);
-    users.add(admin3);
+    cal.remove(8);
 
-    List<UserDTO> result = userService.getActiveUsers(users);
-
-    System.out.println(result.size());
+    System.out.println(cal);
+    System.out.println(cal.getSize());
+    System.out.println(cal.get(8));
+    cal.clear();
+    System.out.println(cal.getSize());
+    System.out.println(cal);
   }
 }
