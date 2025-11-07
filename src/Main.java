@@ -4,6 +4,7 @@ import tasks.task1.UserRole;
 import tasks.task1.UserService;
 import tasks.task2.CustomArrayList;
 import tasks.task3.CalculatorData;
+import tasks.task4.Task4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +49,10 @@ public class Main {
 //    cal.clear();
 //    System.out.println(cal.getSize());
 //    System.out.println(cal);
+//
+//    new CalculatorData().run();
 
-    new CalculatorData().run();
+    Task4 task = new Task4();
+    Task4.runAll(task);
   }
 }
