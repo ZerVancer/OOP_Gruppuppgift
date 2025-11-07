@@ -3,6 +3,7 @@ import tasks.task1.UserDTO;
 import tasks.task1.UserRole;
 import tasks.task1.UserService;
 import tasks.task2.CustomArrayList;
+import tasks.task3.CalculatorData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,23 +30,25 @@ public class Main {
 //    List<UserDTO> result = userService.getActiveUsers(users);
 //
 //    System.out.println(result.size());
+//
+//    CustomArrayList<Integer> cal = new CustomArrayList<>();
+//
+//    cal.add(1);
+//    cal.add(2);
+//    cal.add(3);
+//    cal.add(4);
+//    cal.add(5);
+//    cal.add(6);
+//
+//    cal.remove(8);
+//
+//    System.out.println(cal);
+//    System.out.println(cal.getSize());
+//    System.out.println(cal.get(8));
+//    cal.clear();
+//    System.out.println(cal.getSize());
+//    System.out.println(cal);
 
-    CustomArrayList<Integer> cal = new CustomArrayList<>();
-
-    cal.add(1);
-    cal.add(2);
-    cal.add(3);
-    cal.add(4);
-    cal.add(5);
-    cal.add(6);
-
-    cal.remove(8);
-
-    System.out.println(cal);
-    System.out.println(cal.getSize());
-    System.out.println(cal.get(8));
-    cal.clear();
-    System.out.println(cal.getSize());
-    System.out.println(cal);
+    new CalculatorData().run();
   }
 }
